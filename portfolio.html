@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neoremos | Web Developer</title>
+        <link rel="stylesheet" type="text/css" href="design.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="icon" href="iconNeo.png">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="nav-container">
+                    <p class="nav-link"><a href="#home">Home</a></p>
+                    <p class="nav-link"><a href="#projects">Projects</a></p>
+                    <p class="nav-main">Neoremos</p>
+                    <p class="nav-link"><a href="#skills">Skills</a></p>
+                    <p class="nav-link"><a href="#contact">Contact</a></p>
+                </div>
+            </header>
+            <main>
+                <section id="home">
+                    <div class="first">
+                        <img src="leaves.jpg" alt="Leaves">
+                        <div class="front-text">
+                        <p class="main-text">|<span class="change-main-text"></span></p>
+                        <p class="sub-text"><span class="change-sub-text"></span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <div class="second">
+                        <img class="second-image" src="lapdark.jpg" alt="Laptop">
+                        <div class="card-container">
+
+                            <div class="card" data-aos="fade-left">
+                                <img src="mizu.jpg" alt="Avatar" style="width:100%">
+                                <div class="content-container">
+                                    <div class="card-text-container">
+                                        <h2>AnimeMizu</h2>
+                                        <hr>
+                                        <p>A simple website about anime that I made while at bootcamp in KodeGo.</p>
+                                    </div>
+                                    <div class="card-button-container">
+                                        <a href="https://neoremos.github.io/E-magazine-Final/E-magazine/home.html" target="_blank"><button type="button" class="card-button">Visit</button></a>
+                                        <a href="https://github.com/Neoremos/E-magazine-Final" target="_blank"><button type="button" class="card-button">Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="fade-left">
+                                <img src="nurse.jpg" alt="Avatar">
+                                <div class="content-container">
+                                    <div class="card-text-container">
+                                        <h2>Clinical Care System</h2>
+                                        <hr>
+                                        <p>This is an assignment that I made in KodeGo</p>
+                                    </div>
+                                    <div class="card-button-container">
+                                        <a href="https://neoremos.github.io/clinicalCareSystem/index.html" target="_blank"><button type="button" class="card-button">Visit</button></a>
+                                        <a href="https://github.com/Neoremos/clinicalCareSystem" target="_blank"><button type="button" class="card-button">Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="fade-left">
+                                <img src="calculator.jpg" alt="Avatar">
+                                <div class="content-container">
+                                    <div class="card-text-container">
+                                        <h2>Digital Claculator</h2>
+                                        <hr>
+                                        <p>I really want to finish this Digital Calculator and remove the eval() for the safety of my digital calculator. </p>
+                                    </div>
+                                    <div class="card-button-container">
+                                        <a href="https://neoremos.github.io/simpleDigiCalc/digiCalc/digiCalc.html" target="_blank"><button type="button" class="card-button">Visit</button></a>
+                                        <a href="https://github.com/Neoremos/simpleDigiCalc" target="_blank"><button type="button" class="card-button">Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="skills">
+                    <div class="third">
+                        <img src="pen.jpg" alt="Pen Image">
+                        <div class="logo-container">
+                            <h2>My Skills</h2>
+                            <div class="logo">
+                            <img src="bootlogo.jpg" data-aos="fade-left">
+                            <img src="jslogo.jpg" data-aos="fade-left">
+                            <img src="pythonlogo.jpg" data-aos="fade-up">
+                            <img src="react.png" data-aos="fade-right">
+                            <img src="sass.png" data-aos="fade-right">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <div class="fourth">
+                        <img src="phone.jpg" alt="">
+                            <div class="form-container" data-aos="fade-up">
+                                <h2 class="form-title">Reach me here</h2>
+                                <form id="contact-form">
+                                    <input type="text" name="user_name" placeholder="Full name*" required>
+                                    <input type="email" name="user_email" placeholder="Email address*" required>
+                                    <label class="message-label" for="message">Type you message here:</label>
+                                    <textarea name="message"></textarea>
+                                    <input class="send-button" type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                Copyright © 2022 Neoremos. All rights reserved
+            </footer>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            const mainTyped = new Typed(".change-main-text", {
+                strings: ["Neoremos"],
+                typeSpeed: 130,
+                backSpeed: 200,
+                loop: false
+            });
+            const subTyped = new Typed(".change-sub-text", {
+                strings: ["The Web Developer you need", "Click Contact if you need me","I'm willing to make websites", "Or", "Be a part of a big project"],
+                typeSpeed: 70,
+                backSpeed: 50,
+                loop: true
+            });
+
+            AOS.init({offset: 500});
+
+        </script>
+    </body>
+
+</html>
