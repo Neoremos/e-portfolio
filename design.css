@@ -212,11 +212,12 @@ header {
 }
 
 .form-container {
+    padding-top: 20px;
     height: 530px;
     width: 355px;
     border-radius: 20px;
     background-color: white;
-    margin-left: 40%;
+    margin-left: 38%;
     box-shadow: 15px 15px 30px 5px black;
 }
 
